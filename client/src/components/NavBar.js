@@ -11,21 +11,25 @@ function NavBar() {
                 </div>
             </div>
             <div id="navigationContainer">
-                <a href="/">
-                    Home
+                <div id="navItems">
+                    <a className="navItem" href="/">
+                        Home
+                    </a>
+                    <a className="navItem" href="/about">
+                        About us
+                    </a>
+                    <a className="navItem" href="/services">
+                        Our services
+                    </a>
+                    <a className="navItem" href="/contact">
+                        Contact us
+                    </a>
+                </div>
+                <a href='/login'>
+                    <button id="loginButton">
+                        Login now
+                    </button>
                 </a>
-                <a href="/about">
-                    About us
-                </a>
-                <a href="/services">
-                    Our services
-                </a>
-                <a href="/contact">
-                    Contact us
-                </a>
-                <button id="loginButton">
-                    Login now
-                </button>
             </div>
         </div>
         </nav>;
