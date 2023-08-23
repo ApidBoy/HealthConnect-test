@@ -19,7 +19,7 @@ function NavBar() {
                         About us
                     </a>
                     <a className="navItem" href="/services">
-                        Our services
+                        For doctors
                     </a>
                     <a className="navItem" href="/contact">
                         Contact us

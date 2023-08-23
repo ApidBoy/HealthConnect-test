@@ -18,6 +18,17 @@ body, html {
   z-index: 0;
   object-fit: cover;
 }
+#loginBgContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  object-fit: cover;
+  filter: brightness(0.9) contrast(1.2);
+}
+
+
 #bgContainer video {
   position: absolute;
   left: 0;
@@ -224,3 +235,107 @@ footer {
 
 
 
+
+
+#loginWelcomeText {
+  font-size: 24px;
+  color: #5ce695;
+}
+
+#loginText {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+#loginPageContainer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#loginCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  background: rgba(35, 35, 35, 0.2);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 14px rgba(35, 35, 35, 0.3);
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+#label {
+  color: #fff;
+  font-size: 16px;
+  display: none;
+}
+
+#textField input {
+  height: 45px;
+  width: 320px;
+  background: rgba(50, 50, 50, 0.3);
+  border-radius: 12px;
+  outline: none;
+  padding-left: 10px;
+  color: #fff;
+  border: 2px solid transparent;
+  transition: .18s;
+}
+
+#textField input::placeholder {
+  color: #999;
+}
+
+#textField input:focus {
+  border: 2px solid #48bb78;
+}
+
+#buttonContainer {
+  display: flex;
+  margin-left: -20px;
+  margin-top: 2px;
+}
+
+#loginPageButton {
+  background: #48bb78;
+  color: #fff;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+#registerButton {
+  color: #fff;
+  border: 2px solid #48bb78;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+#buttonContainer button {
+  transition: .2s;
+}
+
+#buttonContainer button:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+#forgotPassword {
+  color: #5ce695;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+#textField {
+  margin-top: 22px;
+}
