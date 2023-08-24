@@ -3,6 +3,8 @@ import Homepage from "./screens/Homepage";
 import {Route, Routes} from "react-router-dom";
 import LoginPage from "./screens/LoginPage";
 import NavBar from './components/NavBar';
+import RegisterPage from './screens/RegisterPage';
+import SearchScreen from './screens/SearchScreen';
 
 function App() {
   return <>
@@ -10,6 +12,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />}></Route>
             <Route path="/login" element={<LoginPage />}></Route>
+            <Route path="/register" element={<RegisterPage />}></Route>
+            <Route path="/search" element={<SearchScreen />}></Route>
           </Routes>;
           </>
 }

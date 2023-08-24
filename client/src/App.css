@@ -1,15 +1,31 @@
+/* Basic styling */
+
+
 * {
   font-family: 'Josefin Sans', sans-serif;
 }
+
 body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background: #000;
 }
+
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Homepage */
+
+
+
 #heroSection {
   height: 100vh;
   width: 100vw;
 }
+
 #bgContainer {
   width: 100%;
   height: 100%;
@@ -18,16 +34,6 @@ body, html {
   z-index: 0;
   object-fit: cover;
 }
-#loginBgContainer {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  z-index: 0;
-  object-fit: cover;
-  filter: brightness(0.9) contrast(1.2);
-}
-
 
 #bgContainer video {
   position: absolute;
@@ -37,83 +43,6 @@ body, html {
   z-index: 0;
 }
 
-nav {
-/*  background: transparent;*/
-/*  background: #48bb78;*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  z-index: 3;
-  width: 100vw;
-  margin-top: 20px;
-/*  box-shadow: 0 0 14px #999;*/
-}
-
-#navContainer {
-  height: 80px;
-  width: 94vw;
-  display: flex;
-  align-items: center;
-  border-radius: 24px;
-  background: rgba(8, 8, 8, 0.2);
-  backdrop-filter: blur(4px);
-}
-
-#navigationContainer {
-  position: absolute;
-  right: 40px;
-  display: flex;
-  align-items: center;
-}
-#navItems a {
-  text-decoration: none;
-  color: #fff;
-  margin-right: 30px;
-  font-size: 1rem;
-  padding-bottom: 2px;
-  border-bottom: 0 solid #eee;
-}
-#navItems a:hover {
-  border-bottom: 2px solid #eee;
-}
-#hcLogoContainer {
-  background: transparent;
-  padding: 8px;
-  border-radius: 70px;
-  border: 2px solid #48bb78;
-  width: 45px;
-  height: 45px;
-  margin-left: 30px;
-}
-#hcLogo {
-  width: 40px;
-}
-#loginButton {
-  font-size: 1.1rem;
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 12px;
-  padding: 10px;
-  transition: .3s;
-}
-#logoContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#headingText {
-  margin-top: 8px;
-  margin-left: 20px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 25px;
-}
-section {
-  position: relative;
-  z-index: 1;
-}
 #heroContainer {
   position: relative;
   top: 180px;
@@ -164,6 +93,7 @@ section {
 #searchBox::placeholder {
   color: #aaa;
 }
+
 #searchBox:focus {
   box-shadow: 0 0 10px #aaa;
 }
@@ -197,18 +127,22 @@ section {
   justify-content: center;
   transition: .3s;
 }
+
 #featureArt {
   margin-bottom: 25px;
   margin-top: -10px;
 }
+
 #featureText {
   color: #fff;
   font-size: 20px;
 }
+
 #featureDescription {
   color: #aaa;
   margin-top: 10px;
 }
+
 #moreCards {
   border: 1px solid #fff;
   padding: 15px;
@@ -217,13 +151,16 @@ section {
   color: #fff;
   border-radius: 12px;
 }
+
 #featureCard:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
+
 footer {
   background: #000;
 }
+
 #hcFooterLogo {
   width: 40px;
   margin-right: 4px;
@@ -235,7 +172,89 @@ footer {
 
 
 
+/* NavBar */
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+  margin-top: 20px;
+}
+
+#navContainer {
+  height: 80px;
+  width: 94vw;
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  background: rgba(8, 8, 8, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+#navigationContainer {
+  position: absolute;
+  right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+#navItems a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 30px;
+  font-size: 1rem;
+  padding-bottom: 2px;
+  border-bottom: 0 solid #eee;
+}
+
+.activeNav, #navItems a:hover {
+  border-bottom: 2px solid #eee;
+}
+
+#hcLogoContainer {
+  background: transparent;
+  padding: 8px;
+  border-radius: 70px;
+  border: 2px solid #48bb78;
+  width: 45px;
+  height: 45px;
+  margin-left: 30px;
+}
+
+#hcLogo {
+  width: 40px;
+}
+
+#loginButton {
+  font-size: 1.1rem;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  transition: .3s;
+}
+
+#logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#headingText {
+  margin-top: 8px;
+  margin-left: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+
+/* Login/Register page */
 
 #loginWelcomeText {
   font-size: 24px;
@@ -257,7 +276,7 @@ footer {
   height: 100vh;
 }
 
-#loginCard {
+#loginCard, #registerCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -269,6 +288,48 @@ footer {
   box-shadow: 0 0 14px rgba(35, 35, 35, 0.3);
   border-radius: 20px;
   margin-top: 40px;
+  animation-name: loginCard;
+  animation-duration: .7s;
+  opacity: 1;
+}
+
+#registerCard {
+  height: 500px;
+}
+
+@keyframes loginCard {
+  from {
+    height: 600px;
+    width: 600px;
+    opacity: 0;
+  }
+}
+
+#loginBgContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  object-fit: cover;
+  filter: brightness(0.65) contrast(1.6) saturate(50%);
+}
+
+#registerBgContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  object-fit: cover;
+  filter: brightness(0.65) contrast(1.6) saturate(50%) hue-rotate(50deg);
+  animation: registerBg 4s;
+}
+
+@keyframes registerBg {
+  from {
+    filter: brightness(0.65) contrast(1.6) saturate(50%) hue-rotate(0deg);
+  }
 }
 
 #label {
@@ -297,6 +358,10 @@ footer {
   border: 2px solid #48bb78;
 }
 
+#textField {
+  margin-top: 15px;
+}
+
 #buttonContainer {
   display: flex;
   margin-left: -20px;
@@ -311,6 +376,7 @@ footer {
   margin-top: 20px;
   border-radius: 12px;
 }
+
 #registerButton {
   color: #fff;
   border: 2px solid #48bb78;
@@ -336,6 +402,148 @@ footer {
   margin-top: 25px;
 }
 
-#textField {
-  margin-top: 22px;
+
+
+/* SearchScreen */
+
+#searchScreenContainer {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, #183d28, #09160e, #040a07, #050505, #000);
+  padding-top: 130px;
+}
+
+#searchPageBoxContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#searchPageBox {
+  height: 50px;
+  width: 500px;
+  border-radius: 14px;
+  border: 2px solid #bbb;
+  background: transparent;
+  color: #fff;
+  font-size: 25px;
+  padding: 0 10px;
+}
+
+#searchPageBox::placeholder {
+  color: #666;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#searchPageBox:focus {
+  box-shadow: 0 0 10px #48bb78;
+}
+
+#searchPageButton {
+  background: #fff;
+  margin-left: 20px;
+  border-radius: 100px;
+  transition: .2s;
+  border: 2px solid transparent;
+}
+
+#searchPageButton:hover {
+  transform: scale(1.05);
+  background: transparent;
+  border: 2px solid #48bb78;
+}
+
+#searchPageButton:hover > span {
+  color: #fff;
+}
+
+#searchPageButton span {
+  color: #000;
+  font-size: 25px;
+  padding: 5px 12px;
+}
+
+#totalSearchResults {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 40px;
+  margin-left: 200px;
+}
+
+#resultCategoryContainer {
+  margin-top: 15px;
+  margin-left: 200px;
+}
+
+#resultCategoryContainer > button {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px 12px;
+  border-radius: 60px;
+  margin-right: 16px;
+  transition: .2s;
+}
+
+#resultCategoryContainer > button:hover, .activeButton {
+  transform: scale(1.1);
+  color: #000 !important;
+  background: #fff;
+}
+
+#searchResultsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#doctorSearchResult {
+  height: 180px;
+  width: 80%;
+  border-radius: 30px;
+  background: rgba(35, 35, 35, 0.5);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 38px;
+}
+
+#doctorPic {
+  height: 120px;
+  width: 120px;
+  background: #1f1f1f;
+  border-radius: 24px;
+}
+
+#doctorInfo {
+  margin-left: 50px;
+}
+
+#doctorText {
+  height: 30px;
+  width: 700px;
+  background: #1f1f1f;
+  border-radius: 20px;
+}
+
+#doctorDescription {
+  height: 20px;
+  width: 500px;
+  background: #1f1f1f;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+#doctorSearchResult > button {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  position: relative;
+  left: 470px;
+  transition: .2s;
+}
+
+#doctorSearchResult > button:hover {
+  background: #fff;
+  color: #000;
 }

@@ -15,24 +15,20 @@ function LoginPage() {
                 Enter your credentials to log in
             </div>
             <div id="textField">
-                <div id="label">
-                    E-mail address
-                </div>
                 <input placeholder="Enter your e-mail" type="email" />
             </div>
             <div id="textField">
-                <div id="label">
-                    Password
-                </div>
                 <input placeholder="Enter password" type="password" />
             </div>
             <div id="buttonContainer">
                 <button id="loginPageButton">
                     Log in
                 </button>
-                <button id="registerButton">
-                    Create a new account
-                </button>
+                <a href="/register">
+                    <button id="registerButton">
+                        Create a new account
+                    </button>
+                </a>
             </div>
             <div id="forgotPassword">
                 Forgot your password?
