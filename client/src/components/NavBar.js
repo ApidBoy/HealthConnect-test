@@ -25,6 +25,11 @@ function NavBar() {
                         Contact us
                     </a>
                 </div>
+                <div id="hamburgerMenu">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
                 <a href='/login'>
                     <button id="loginButton">
                         Login now

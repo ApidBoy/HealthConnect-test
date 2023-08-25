@@ -15,7 +15,9 @@ function Homepage() {
             <video autoPlay={true} loop muted src={bgVideo}></video>
         </div>
         <div id="heroContainer">
-            Your health, at your fingertips
+            <div id="heroText">
+                Your health, at your fingertips
+            </div>
             <div id="heroDescription">
                 Blah blah blah, I wanna play valorant and overwatch all day but I gotta code the whole fucking day.
             </div>
@@ -28,54 +30,56 @@ function Homepage() {
                 </a>
             </div>
         </div>
-        <div id="features">
-                <div id="featureCard">
-                    <img id="featureArt" alt="" src={doctors} />
-                    <div id="featureText">
-                        Find doctors near you
+        <div id="featuresContainer">
+            <div id="features">
+                    <div id="featureCard">
+                        <img id="featureArt" alt="" src={doctors} />
+                        <div id="featureText">
+                            Find doctors near you
+                        </div>
+                        <div id="featureDescription">
+                            Find doctors near you
+                        </div>
                     </div>
-                    <div id="featureDescription">
-                        Find doctors near you
+                    <div id="featureCard">
+                        <img id="featureArt" alt="" src={medicines} />
+                        <div id="featureText">
+                            Search for medicines
+                        </div>
+                        <div id="featureDescription">
+                            Search for medicines
+                        </div>
                     </div>
-                </div>
-                <div id="featureCard">
-                    <img id="featureArt" alt="" src={medicines} />
-                    <div id="featureText">
-                        Search for medicines
+                    <div id="featureCard">
+                        <img id="featureArt" alt="" src={appointment} />
+                        <div id="featureText">
+                            Book appointments
+                        </div>
+                        <div id="featureDescription">
+                            Book appointments
+                        </div>
                     </div>
-                    <div id="featureDescription">
-                        Search for medicines
+                    <div id="featureCard">
+                        <img id="featureArt" alt="" src={dashboard} />
+                        <div id="featureText">
+                            Personalized dashboard
+                        </div>
+                        <div id="featureDescription">
+                            Personalized dashboard
+                        </div>
                     </div>
-                </div>
-                <div id="featureCard">
-                    <img id="featureArt" alt="" src={appointment} />
-                    <div id="featureText">
-                        Book appointments
+                    <div id="featureCard">
+                        <img id="featureArt" alt="" src={oneToOne} />
+                        <div id="featureText">
+                            One-to-one experience
+                        </div>
+                        <div id="featureDescription">
+                            One-to-one experience
+                        </div>
                     </div>
-                    <div id="featureDescription">
-                        Book appointments
+                    <div id="moreCards">
+                        Explore more
                     </div>
-                </div>
-                <div id="featureCard">
-                    <img id="featureArt" alt="" src={dashboard} />
-                    <div id="featureText">
-                        Personalized dashboard
-                    </div>
-                    <div id="featureDescription">
-                        Personalized dashboard
-                    </div>
-                </div>
-                <div id="featureCard">
-                    <img id="featureArt" alt="" src={oneToOne} />
-                    <div id="featureText">
-                        One-to-one experience
-                    </div>
-                    <div id="featureDescription">
-                        One-to-one experience
-                    </div>
-                </div>
-                <div id="moreCards">
-                    Explore more
                 </div>
             </div>
     </section>
